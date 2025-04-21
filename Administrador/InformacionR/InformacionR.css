@@ -1,0 +1,236 @@
+body{
+    padding: 0;
+    background-color: #9e96;
+    background-image: url(/imagenes/fondo_huellas_perro.png);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    border: solid black 1px;
+    display: grid;
+    grid-template-columns: 50% repeat(2, 25%);
+    padding: 10px 20px;
+    width: 70%;
+    background-color: #94ef94ff;
+    border-radius: 10px;
+    justify-self: center;
+}
+
+nav a{
+    border: solid black 1px;
+    text-decoration: none;
+    display: block;
+    margin: 10px;
+    background-color: #bfb;
+    padding: 8px;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.Presentacion{
+    border: solid black 1px;
+    width: 80%;
+    background-color: #b1efb1;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    justify-self: center;
+}
+
+.Presentacion p{
+    margin: 5px;
+    font-size: 18px;
+}
+
+.Contenedor{
+    border: solid black 1px;
+    width: 65%;
+    justify-items: center;
+    background: linear-gradient(to right, #8d8,#9e9);
+    border-radius: 15px;
+    margin: 30px;
+    padding: 10px;
+    justify-self: center;
+}
+
+nav a:hover{
+    transition: 0.5s ease;
+    background-color: #ada;
+}
+
+.Presentacion p{
+        background-color: #4b45;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 15px;
+}
+
+.Presentacion h6{
+    background-color: #7c7;
+
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    font-size: 22px;
+    margin: 10px;
+    justify-self: center;
+    border: black solid 1px;
+}
+
+.Refugio{
+    background-color: #efe6;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 15px;
+    border: black solid 1px;
+    width: 75%;
+    justify-self: center;
+    justify-items: center;
+}
+
+.Refugio h4{
+    background-color: #4b49;
+    margin: 25px 15px;
+    width: 55%;
+    padding: 7px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 15px;
+    border:  black solid 1px;
+}
+
+.Refugio button{
+    border-radius: 15px;
+    padding: 5px;
+    border: black solid 1px;
+    cursor: pointer;
+    
+}
+
+.Refugio button:hover{
+    transition: 0.5s ease;
+    background-color: #ddd;
+}
+
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+.menu-button {
+    background-color: #7c7;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin:  15px 15px 0 0;
+}
+.menu-button:hover {
+    transition: 0.5s ease;
+    background-color: #9d9;
+}
+.menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    min-width: 150px;
+    margin-top: 5px;
+    padding: 5px 0;
+}
+.menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+.menu a:hover {
+    background-color: #f1f1f1;
+}
+
+
+@media (max-width: 768px) {
+    body {
+      width: 700px;
+    }
+  
+    nav {
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    nav a {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+  
+    .Presentacion {
+      width: 400px;
+      padding: 20px;
+    }
+  
+    .Presentacion h6 {
+      font-size: 18px;
+      width: 90%;
+      text-align: center;
+    }
+  
+    .Presentacion p {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    .Contenedor {
+      width: 500px;
+      margin: 20px auto;
+      padding: 15px;
+    }
+  
+    .Refugio {
+      width: 75%;
+      padding: 15px;
+      margin: 15px auto;
+    }
+  
+    .Refugio h4 {
+      width: 90%;
+      font-size: 14px;
+    }
+  
+    .Refugio button {
+      width: 100%;
+      font-size: 14px;
+      margin: 10px 0;
+    }
+  
+    .menu-container {
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    .menu-button {
+      font-size: 14px;
+      width: 150px;
+      padding: 10px;
+    }
+  
+    .menu {
+      position: static;
+      box-shadow: none;
+      width: 150px;
+      margin: 10px auto;
+    }
+  
+    .menu a {
+      font-size: 14px;
+    }
+  }
+  

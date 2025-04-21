@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Adopta! Rescue Me</title>
+    <link rel="stylesheet" href="Donacion.css">
+</head>
+<body>
+    <nav class="Inicio">
+        <div class="Principal"><a href="../InicioA.html">Rescue Me</a></div>
+        <a href="Adopcion.html">¡Adopta!</a>
+        <a href="Donacion.html">Donaciones</a>
+        <a href="inf_Refugios.html">Refugios</a>
+        <a href="/Inicio/Inicio.html">Cerrar sesión</a>
+    </nav>
+    <div class="Contenedor">
+        <div class="Donacion"> 
+            <h4>¡Agradecemos su apoyo!</h4>
+            <p>Bienvenido a la sección de donación, aquí podrás seleccionar a qué refugio quieres realizar una donación, ¡estas donaciones son voluntarias y las puedes realizar si gustas! La transacción irá exclusivamente dirigida al refugio.<br>Nuevamente, agradecemos su apoyo. </p>
+            <div class="Imagen">
+                <img src="https://www.hogarmania.com/archivos/202011/cosas-donar-refugio-animales-portada-668x400x80xX-1.jpg">
+            </div>
+        </div>
+    <div class="Transaccion">
+        <div class="MetodoP">
+        <h4>Realizar transacción</h4>
+
+        <form onsubmit="return false;" method="POST">
+            <div class="grid"><input type="number"  id="valorDonacion" placeholder="Ingrese el valor a donar" required>
+                <label for="ListadoRefugio">Seleccionar Refugio</label>
+                <select name="ListadoRefugio" id="ListadoRefugio" required>
+                    <option value="" disabled selected>Elija un refugio</option>
+                    <option value="1">Milagrinos</option>
+                    <option value="2">Salva ya</option>
+                    <option value="3">Refugio</option>
+                    <option value="4">Refugio2</option>
+                </select>
+                <label for="ListadoMetodoDePago">Seleccionar método de pago</label>
+                <select name="ListadoMetodoDePago" id="ListadoMetodoDePago" required>
+                    <option value="" disabled selected>Elija un banco</option>
+                    <option value="1">Daviplata</option>
+                    <option value="2">Nequi</option>
+                    <option value="3">Bancolombia</option>
+                </select>
+                <label>Ingrese su número de teléfono</label>
+                <!-- Botón de envío -->
+                <button type="submit" onclick="mostrarTexto()">¡Donar!</button>
+            </form>
+            <p id="Texto">Transacción realizada exitosamente</p>
+            </div>
+        
+        <script>
+            function Refrescar(){
+                location.reload();
+            }
+        function PagoRealizado() {
+            //ids
+            var p_s_i = document.getElementById('ListadoRefugio').value;
+            var r_s_i = document.getElementById('ListadoMetodoDePago').value;
+
+
+            //nombres
+            var p_s_n = document.getElementById('ListadoRefugio').name;
+            var r_s_n = document.getElementById('ListadoMetodoDePago').name;
+            var valor = document.getElementById('valorDonacion').value;
+
+
+
+    if (p_s_i > 0 && r_s_i >0 && valor >0) {
+        alert("El refugio seleccionado es: " + p_s_n +" el banco seleccionado es "+ r_s_n+ "con un valor de: " + valor)
+    }else {
+        alert("Por favor, selecciona un valor válido.");
+    }
+}
+
+function mostrarTexto() {
+    let texto = document.getElementById("Texto");
+    let p_s_n = document.getElementById("ListadoRefugio").value;
+    let p_s_i = document.getElementById("ListadoMetodoDePago").value;
+    if (p_s_n !== "" && p_s_i !== "") {
+        texto.style.display = "block";
+    } else {
+        texto.style.display = "none";
+    }
+    }
+        </script>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

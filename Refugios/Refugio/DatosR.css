@@ -1,0 +1,157 @@
+body{
+    padding: 0;
+    background-color: #9e96;
+    background-image: url(/imagenes/fondo_huellas_perro.png);
+    justify-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    border: solid black 1px;
+    display: grid;
+    grid-template-columns: 35% repeat(3, 22%);
+    padding: 10px 20px;
+    width: 70%;
+    background-color: #94ef94ff;
+    border-radius: 10px;
+}
+
+.Contenedor{
+    border: solid black 1px;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    width: 70%;
+    justify-items: center;
+    background: linear-gradient(to right, #8d8,#9e9);
+    border-radius: 15px;
+    margin: 30px;
+    padding: 10px;
+}
+
+
+.Informacion{
+    width: 65%;
+}
+
+.Caracteristicas{
+    border: solid black 1px;
+    background-color: #bfb;
+    padding: 5px 15px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.Caracteristicas h6{
+    border: solid black 1px;
+    padding: 5px;
+    background-color: #dfd;
+    border-radius: 15px;
+    width: 70%;
+}
+
+h4{
+    border: solid black 1px;
+    padding: 10px;
+    background-color: #8d8;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.Actualizacion{
+    border: solid black 1px;
+    width: 85%;
+    background-color: #bfb;
+    padding: 5px 15px;
+    border-radius: 15px;
+    margin: 10px;
+    justify-items: center;
+}
+
+.Actualizacion button{
+    border-radius: 15px;
+    border: solid black 1px;
+    padding: 7px 10px;
+    cursor: pointer;
+    width: 150px;
+}
+
+button:hover{
+    transition: 0.5s ease;
+    background-color: #ddd;
+}
+
+
+nav a{
+    border: solid black 1px;
+    text-decoration: none;
+    display: block;
+    margin: 10px;
+    background-color: #bfb;
+    padding: 8px;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bolder;
+    text-align: center;  
+    line-height: 30px;
+}
+
+
+.Principal a{
+    font-size: 25px;
+    font-family: "Lucida Handwriting", "Dancing Script", cursive;
+}
+
+nav a:hover{
+    transition: 0.5s ease;
+    background-color: #ada;
+}
+
+
+@media (max-width: 1200px) {
+  body{
+    width: 700px;
+  }
+    nav {
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+      text-align: center;
+    }
+  
+    nav a {
+      font-size: 18px;
+    }
+  
+    .Principal a {
+      font-size: 20px;
+    }
+  
+    .Contenedor {
+      grid-template-columns: 1fr;
+      width: 400px;
+      padding: 15px;
+      margin: 20px auto;
+    }
+  
+    .Informacion {
+      width: 100%;
+    }
+  
+    .Caracteristicas h6 {
+      width: 75%;
+      font-size: 14px;
+      justify-self: center;
+    }
+  
+    h4 {
+      font-size: 16px;
+    }
+
+    .Actualizacion{
+      padding: 10px;
+    }
+
+    .Actualizacion h4{
+      margin: 5px, 0, 0, 15px;
+    }
+}

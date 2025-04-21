@@ -1,0 +1,164 @@
+body{
+    padding: 0;
+    background-color: #9e96;
+    background-image: url(/imagenes/fondo_huellas_perro.png);
+    justify-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    border: solid black 1px;
+    display: grid;
+    grid-template-columns: 35% repeat(3, 22%);
+    padding: 10px 20px;
+    width: 70%;
+    background-color: #94ef94ff;
+    border-radius: 10px;
+}
+nav a{
+    border: solid black 1px;
+    text-decoration: none;
+    display: block;
+    margin: 10px;
+    background-color: #bfb;
+    padding: 8px;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 30px;
+}
+
+.Presentacion{
+    border: solid black 1px;
+    width: 80%;
+    background-color: #b1efb1;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    justify-items: center;
+}
+
+.Presentacion h4{
+    width: 60%;
+    text-align: center;
+    border: none black 1px;
+    padding: 10px;
+    margin: 2px;
+    margin: 10px 15px 20px;
+    background-color: #8d8;
+    border-radius: 15px;
+    border: black solid 1px;
+}
+
+.Presentacion input{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: 250px;
+}
+
+.Texto{
+    border-radius: 15px;
+    border: solid black 1px;
+    padding: 7px;
+}
+
+.Contenedor{
+    border: solid black 1px;
+    width: 70%;
+    justify-items: center;
+    background: linear-gradient(to right, #8d8,#9e9);
+    border-radius: 15px;
+    margin: 30px;
+    padding: 10px;
+    min-height: 400px;
+}
+
+nav a:hover{
+    transition: 0.5s ease;
+    background-color: #ada;
+}
+
+.Archivo{
+    position: relative; display: inline-block; 
+    border-radius: 15px;
+    padding: 5px;
+}
+
+
+button{
+    width: 250px;
+    border-radius: 15px;
+    border: solid black 1px;
+    padding: 5px;
+    cursor: pointer;
+    margin: 0 50px;
+}
+
+form{
+    justify-items: center;
+}
+
+.Enviar{
+    border-radius: 15px;
+    padding: 7px;
+    border: solid black 1px;
+    cursor: pointer;
+}
+
+.Enviar:hover{
+    transition: 0.5s ease;
+    background-color: #ccc;
+}
+
+a button:hover{
+    transition: 0.5s ease;
+    background-color: #ccc;
+}
+
+.Principal a{
+    font-size: 25px;
+    font-family: "Lucida Handwriting", "Dancing Script", cursive;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    body{
+        width: 700px;
+    }
+    nav {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    text-align: center;
+    }
+  
+    nav a {
+    font-size: 18px;
+    }
+  
+    .Principal a {
+    font-size: 20px;
+    }
+  
+    .Presentacion {
+    width: 400px;
+      padding: 15px;
+    }
+  
+    .Presentacion h4 {
+      width: 90%;
+      font-size: 16px;
+    }
+
+    button{
+        display: flex;
+        width: 200px;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+}

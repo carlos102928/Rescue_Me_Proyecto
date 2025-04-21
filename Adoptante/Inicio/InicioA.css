@@ -1,0 +1,184 @@
+body{
+    padding: 0;
+    justify-items: center;
+    
+    background-color: #9e96;
+    background-image: url(/imagenes/fondo_huellas_perro.png);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+nav{
+    border: solid black 1px;
+    display: grid;
+    grid-template-columns: 33% repeat(4, 17%);
+    padding: 10px 20px;
+    width: 70%;
+    background-color: #94ef94ff;
+    border-radius: 10px;
+}
+
+.Presentacion{
+    border: solid black 1px;
+    width: 80%;
+    background-color: #b1efb1;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.Presentacion p{
+    margin: 5px;
+    font-size: 18px;
+}
+
+.Contenedor{
+    border: solid black 1px;
+    width: 70%;
+    justify-items: center;
+    background: linear-gradient(to right, #8d8,#9e9);
+    border-radius: 15px;
+    margin: 30px;
+    padding: 10px;
+}
+
+.Presentacion p{
+        padding: 10px;
+        margin: 10px;
+        border-radius: 15px;
+}
+
+.Presentacion h6{
+    background-color: #4b45;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    font-size: 22px;
+    margin: 10px;
+    justify-self: center;
+    border: black solid 1px;
+}
+
+nav a{
+    border: solid black 1px;
+    text-decoration: none;
+    display: block;
+    margin: 10px;
+    background-color: #bfb;
+    padding: 8px;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bolder;
+    text-align: center;  
+    line-height: 30px;
+}
+
+
+.Principal a{
+    font-size: 25px;
+    font-family: "Lucida Handwriting", "Dancing Script", cursive;
+}
+
+nav a:hover{
+    transition: 0.5s ease;
+    background-color: #ada;
+}
+
+
+/* para pantallas menores entre 1200 a 768*/
+@media (max-width: 1250px) {
+    nav {
+      grid-template-columns: 50% 50%;
+      width: 500px;
+      text-align: center;
+    }
+  
+    nav a {
+      font-size: 18px;
+      margin: 5px;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  body{
+    width: 700px;
+  }
+    nav {
+      grid-template-columns: 100%;
+      width: 500px;
+      text-align: center;
+    }
+  
+    nav a {
+      font-size: 18px;
+      margin: 5px;
+    }
+  
+    .Principal a {
+      font-size: 20px;
+    }
+  
+    .Contenedor{
+      width: 450px;
+      margin: 20px auto;
+      padding: 15px;
+    }
+
+    .Presentacion{
+      width: 350px;
+    }
+    .Presentacion p {
+      font-size: 16px;
+    }
+  
+    .Presentacion h6 {
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+  
+
+  @media (max-width: 468px) {
+
+    body{
+      width: 500px;
+    }
+      nav {
+        grid-template-columns: 100%;
+        width: 350px;
+        text-align: center;
+      }
+    
+      nav a {
+        font-size: 18px;
+        margin: 5px;
+      }
+    
+      .Principal a {
+        font-size: 20px;
+      }
+    
+      .Contenedor{
+        width: 300px;
+        margin: 20px auto;
+        padding: 15px;
+      }
+
+      .Presentacion {
+        width: 75%;
+      }
+    
+      .Presentacion p {
+        font-size: 12px;
+      }
+    
+      .Presentacion h6 {
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+    

@@ -1,0 +1,217 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #9e96;
+    background-image: url(/imagenes/fondo_huellas_perro.png);
+    font-family: sans-serif;
+    justify-content: center;
+}
+
+
+.singupFrm{
+justify-content: center;
+justify-self: center;
+justify-items: center;
+margin: 25px 0 20px;
+height: 75vh;
+width: 50%;
+right: 1%;
+}
+
+
+.form{
+    background-color: #fff;
+    width: 400px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px;
+     border: solid black 1px;
+    border-radius: 10px;
+}
+
+
+.title{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+
+.inputcontainer{
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+    position: relative;
+    font-weight: bold;
+}
+
+
+.input{
+    border-radius: 7px;
+    border: solid #DADCE0 3px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 20px;
+    background: none;
+    outline: none;
+    z-index: 1;
+}
+
+
+.label{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: #fff;
+    color: #DADCE0;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+}
+.placeholder{
+    color: transparent;
+}
+
+
+.input:focus + .label{
+    top: -7px;
+    left: 3px;
+    font-size: 14px;
+    font-weight:600;
+    z-index: 10;
+    color: #000;
+}
+
+
+.input:not(:placeholder-shown) + .label{
+    top: -7px;
+    left: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 10;
+}
+
+
+.input:focus{
+    border: 2px solid #99f;
+}
+
+
+button{
+    background-color: #ddf;
+    font-weight: bold;
+    border: none;
+    display: block;
+    margin-left: auto;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    margin-top: 30px;
+    transition: 0.5s ease;
+}
+
+.Ingreso{
+    text-decoration: none;
+}
+
+button:hover{
+    background-color: #99f;
+    transform: translateY(-2px);
+}
+
+
+nav{
+    justify-self: center;
+    border: solid black 1px;
+    display: grid;
+    grid-template-columns: 50% repeat(2, 25%);
+    padding: 10px 20px;
+    width: 70%;
+    background-color: #94ef94ff;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+nav a{
+    border: solid black 1px;
+    text-decoration: none;
+    display: block;
+    margin: 10px;
+    background-color: #bfb;
+    padding: 8px;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bolder;
+    text-align: center;  
+    line-height: 30px;
+}
+
+
+.Principal a{
+    font-size: 25px;
+    font-family: "Lucida Handwriting", "Dancing Script", cursive;
+}
+
+nav a:hover{
+    transition: 0.5s ease;
+    background-color: #ada;
+}
+
+
+/* para pantallas menores a 768*/
+@media (max-width: 768px) {
+    body{
+        width: 700px;
+    }
+    nav {
+      grid-template-columns: 1fr;
+      width: 500px;
+      text-align: center;
+    }
+  
+    nav a {
+      font-size: 18px;
+    }
+  
+    .Principal a {
+      font-size: 20px;
+    }
+  
+  }
+  
+
+@media (max-width: 468px) {
+    body{
+        width: 500px;
+    }
+    nav {
+      grid-template-columns: 1fr;
+      width: 400px;
+      text-align: center;
+    }
+
+    nav a {
+    font-size: 18px;
+    }
+
+    .Principal a {
+    font-size: 20px;
+    }
+
+    .form{
+        width: 300px;
+        text-align: center;
+    }
+
+    .form h1{
+        font-size: 25px;
+        margin: 5px, 0, 15px;
+    }
+}
