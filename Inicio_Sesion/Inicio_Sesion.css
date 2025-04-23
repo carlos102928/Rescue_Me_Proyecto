@@ -26,7 +26,7 @@ right: 1%;
     padding: 20px 40px;
     border-radius: 10px;
     box-shadow: 0 5px 5px;
-     border: solid black 1px;
+     border: solid black 3px;
     border-radius: 10px;
 }
 
@@ -70,7 +70,6 @@ right: 1%;
     background-color: #fff;
     color: #DADCE0;
     font-size: 16px;
-    transition: 0.5s;
     z-index: 0;
 }
 .placeholder{
@@ -85,6 +84,7 @@ right: 1%;
     font-weight:600;
     z-index: 10;
     color: #000;
+    transition: 0.5s;
 }
 
 
@@ -164,7 +164,59 @@ nav a:hover{
     background-color: #ada;
 }
 
+.menu-container {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        justify-items: right;
 
+}
+.menu-button {
+    background-color: #bbf;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 15px 0 0;
+    align-self: right;
+    justify-self: right;
+}
+.menu-button:hover {
+    transition: 0.5s ease;
+    background-color: #99f;
+}
+.menu {
+    display: none;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: black solid 1px;
+    border-radius: 5px;
+    min-width: 150px;
+    margin-top: 5px;
+    padding: 5px 0;
+    justify-content: right;
+}
+.menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+.menu a:hover {
+    background-color: #f1f1f1;
+}
+
+
+.Selector.visible{
+    opacity: 1;
+    visibility: visible;
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    border: solid black 1px;
+}
 /* para pantallas menores a 768*/
 @media (max-width: 768px) {
     body{

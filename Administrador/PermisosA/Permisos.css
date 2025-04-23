@@ -8,7 +8,7 @@ body{
 nav{
     border: solid black 1px;
     display: grid;
-    grid-template-columns: 50% repeat(2, 25%);
+    grid-template-columns: 40% repeat(3, 20%);
     padding: 10px 20px;
     width: 70%;
     background-color: #94ef94ff;
@@ -40,13 +40,13 @@ nav{
     background-color: #dfd;
     padding: 5px;
     border-radius: 15px;
-    width: 30%;
+    width: 250px;
     text-align: center;
 }
 
 .Informacion{
     text-align: center;
-    width: 50%;
+    width: 90%;
     border-radius: 15px;
     background-color: #bfb;
     padding: 5px;
@@ -78,7 +78,7 @@ button{
     cursor: pointer;
     background-color: #fff;
     margin: 5px 10px;
-    width: 80%;
+    width: 150px;
     border: black solid 1px;
 }
 
@@ -95,6 +95,7 @@ button:hover{
     font-size: 14px;
     border: black solid 1px;
     border-radius: 15px;
+    width: 350px;
 }
 
 nav a{

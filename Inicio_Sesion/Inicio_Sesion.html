@@ -25,10 +25,17 @@
                 <input type="password" class="input" placeholder="">
                 <label for="" class="label">Contraseña</label>
             </div>
-            <button><a href="/Adoptante/Inicio/InicioA.html" class="Ingreso">Ingresar</a></button>
+            <div class="menu-container">
+                <button class="menu-button" onclick="toggleMenu()">Ingresar</button>
+                <div class="menu" id="menu">
+                    <a href="/Administrador/InicioAdmin.html">Inicio admin</a>
+                    <a href="/Adoptante/Inicio/InicioA.html">Inicio adoptante</a>
+                    <a href="/Refugios/InicioR.html">Inicio refugio</a>
+                </div>
             </div>
         </form>
         </div>
     </div>
+    <script src="/Administrador/InicioAdmin.js"></script>
 </body>
 </html>

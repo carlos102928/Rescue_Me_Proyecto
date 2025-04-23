@@ -7,8 +7,7 @@ body{
 
 nav{
     border: solid black 1px;
-    display: grid;
-    grid-template-columns: 50% repeat(2, 25%);
+    grid-template-columns: 40% repeat(3, 20%);
     padding: 10px 20px;
     width: 70%;
     background-color: #94ef94ff;
