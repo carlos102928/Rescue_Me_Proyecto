@@ -42,6 +42,11 @@ nav a{
     justify-self: center;
 }
 
+.Principal a{
+  font-size: 25px;
+  font-family: "Lucida Handwriting", "Dancing Script", cursive;
+}
+
 .Presentacion p{
     margin: 5px;
     font-size: 18px;

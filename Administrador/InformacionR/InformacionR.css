@@ -27,6 +27,12 @@ nav a{
     color: #000;
     font-weight: bolder;
     text-align: center;
+    line-height: 20px;
+}
+
+.Principal a{
+  font-size: 25px;
+  font-family: "Lucida Handwriting", "Dancing Script", cursive;
 }
 
 .Presentacion{
