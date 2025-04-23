@@ -108,6 +108,33 @@ nav a:hover{
     background-color: #ada;
 }
 
+#Texto{
+    display: none;
+    background-color: #eee;
+    padding: 5px;
+    margin-top: 15px;
+    border-radius: 15px;
+    width: 35%;
+    font-size: 12px;
+    justify-self: center;
+  }
+
+button{
+    padding: 10px;
+    border-radius: 15px;
+    border: solid black 1px;
+    cursor: pointer;
+    background-color: #efe;
+    margin: 5px 10px;
+    width: 150px;
+
+}
+
+button:hover{
+    transition: ease 0.5s;
+    background-color: #ccc;
+}
+
 .menu-container {
     position: relative;
     display: inline-block;

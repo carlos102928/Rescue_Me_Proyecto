@@ -9,7 +9,7 @@
 <body>
     <body>
         <nav class="Inicio">
-            <a href="/Administrador/InicioAdmin.html">Rescue Me</a>
+            <div class="Principal"><a href="../InicioAdmin.html">Rescue Me</a></div>
             <a href="/Administrador/GestorAdoptantes/Adoptantesinf.html">Inf. adoptantes</a>
             <a href="GestorAdopcion.html">Gestionar adopción</a>
             <a href="/Inicio/Inicio.html">Cerrar sesión</a>
@@ -31,7 +31,7 @@
                 <p>2025-05-16 / Inicio proceso adopción / Adoptante id 10 / Carlos / Escobar / Animal id 15 /
                     <br>
                     <label for="opciones">Seleccionar estado adopción</label>
-                    <select class="Opciones">
+                    <select class="Opciones" id = "Opciones" required>
                     <option value="">Seleccionar estado</option>
                     <option value="opcion1">Aceptado</option>
                     <option value="opcion2">Degenado</option>
@@ -40,7 +40,7 @@
                 <p>2025-05-16 / Inicio proceso adopción / Adoptante id 10 / Jose / Flores / Animal id 10 /
                     <br>
                     <label for="opciones">Seleccionar estado adopción</label>
-                    <select class="Opciones">
+                    <select class="Opciones" id = "Opciones" required>
                     <option value="">Seleccionar estado</option>
                     <option value="opcion1">Aceptado</option>
                     <option value="opcion2">Degenado</option>
@@ -49,7 +49,7 @@
                 <p>2025-05-17 / Inicio proceso adopción / Adoptante id 1 / Felipe / Gaitan / Animal id 5 /
                     <br>
                     <label for="opciones">Seleccionar estado adopción</label>
-                    <select class="Opciones">
+                    <select class="Opciones" id = "Opciones" required>
                     <option value="">Seleccionar estado</option>
                     <option value="opcion1">Aceptado</option>
                     <option value="opcion2">Degenado</option>
@@ -58,7 +58,7 @@
                 <p>2025-05-17 /Inicio proceso adopción / Usuario id 11 / Ana / Correa / Animal id 7 /
                     <br>
                     <label for="opciones">Seleccionar estado adopción</label>
-                    <select class="Opciones">
+                    <select class="Opciones" id = "Opciones" required>
                     <option value="">Seleccionar estado</option>
                     <option value="opcion1">Aceptado</option>
                     <option value="opcion2">Degenado</option>
@@ -67,7 +67,7 @@
                 <p>2025-05-17 / Inicio proceso adopción/ Usuario id 12 / Jesus / Molino / Animal id 3 /
                     <br>
                     <label for="opciones">Seleccionar estado adopción</label>
-                    <select class="Opciones">
+                    <select class="Opciones" id = "Opciones" required>
                     <option value="">Seleccionar estado</option>
                     <option value="opcion1">Aceptado</option>
                     <option value="opcion2">Degenado</option>
@@ -76,7 +76,7 @@
                 <p>2025-05-17 / Inicio proceso adopción / Usuario id 3 / Carlos / Molina / Animal id 9 /
                     <br>
                     <label for="opciones">Seleccionar estado adopción</label>
-                    <select class="Opciones">
+                    <select class="Opciones" id = "Opciones" required>
                     <option value="">Seleccionar estado</option>
                     <option value="opcion1">Aceptado</option>
                     <option value="opcion2">Degenado</option>
@@ -85,17 +85,30 @@
                 <p>2025-05-18 / Ingreso información / Usuario id 4 / Michael / Borbosa / Animal id 19 /
                     <br>
                     <label for="opciones">Seleccionar estado adopción</label>
-                    <select class="Opciones">
+                    <select class="Opciones" id = "Opciones" required>
                     <option value="">Seleccionar estado</option>
                     <option value="opcion1">Aceptado</option>
                     <option value="opcion2">Degenado</option>
                     </select>
                 </p>
-                <input type="submit">
+                <button type="submit" onclick="mostrarTexto()">Enviar</button>
+                <p id="Texto">Se han acutalizado los estados</p>
             </form>
         </div>
 </div>
 </div>
 <script src="/Administrador/InicioAdmin.js"></script>
+<script>
+    function mostrarTexto() {
+    let texto = document.getElementById("Texto");
+    let Opciones = document.getElementById("Opciones").value
+    if (Opciones != ""){
+        texto.style.display = "block";
+    }
+    else{
+        texto.style.display = "none"
+    }
+    }
+</script>
 </body>
 </html>
