@@ -22,6 +22,7 @@ nav{
     display: grid;
     grid-template-columns: repeat(2, 50%);
     width: 70%;
+    height: 300px;
     justify-items: center;
     background: linear-gradient(to right, #8d8,#9e9);
     border-radius: 15px;
@@ -40,7 +41,7 @@ nav{
     background-color: #dfd;
     padding: 5px;
     border-radius: 15px;
-    width: 250px;
+    width: 150px;
     text-align: center;
 }
 
@@ -62,13 +63,13 @@ nav{
 .Permisos{
     border: solid black 1px;
     padding: 10px;
-    height: 25vh;
     background-color: #b1efb1;
     margin: 5px 10px;
     border-radius: 15px;
     justify-items: center;
     justify-self: center;
     width: 65%;
+    height: 250px;
 }
 
 button{
@@ -78,7 +79,7 @@ button{
     cursor: pointer;
     background-color: #fff;
     margin: 5px 10px;
-    width: 150px;
+    width: 125px;
     border: black solid 1px;
 }
 
@@ -95,23 +96,23 @@ button:hover{
     font-size: 14px;
     border: black solid 1px;
     border-radius: 15px;
-    width: 350px;
+    width: 250px;
 }
 
 nav a{
-    border: solid black 1px;
-    text-decoration: none;
-    display: block;
-    margin: 10px;
-    background-color: #bfb;
-    padding: 8px;
-    border-radius: 10px;
-    color: #000;
-    font-weight: bolder;
-    text-align: center;  
-    line-height: 30px;
+  border: solid black 1px;
+  text-decoration: none;
+  display: block;
+  margin: 10px;
+  background-color: #bfb;
+  padding: 8px;
+  border-radius: 10px;
+  color: #000;
+  font-weight: bolder;
+  text-align: center;  
+  line-height: 20px;
+  font-size: 14px;
 }
-
 
 .Principal a{
     font-size: 25px;
@@ -187,10 +188,12 @@ nav a:hover{
     }
   
     .Contenedor {
-      grid-template-columns: 50% 50%;
+      display: flex;
+      flex-direction: column;
       width: 450px;
       padding: 15px;
       margin: 20px auto;
+      height: auto;
     }
   
     .Permisos {
@@ -243,9 +246,14 @@ nav a:hover{
       font-size: 16px;
       padding: 10px;
     }
+
+    .Permisos p {
+      font-size: 14px;
+      width: 60%;
+    }
   }
 
-@media (max-width: 768px) {
+  @media (max-width: 1200px) {
     nav {
     display: flex;
     flex-direction: column;

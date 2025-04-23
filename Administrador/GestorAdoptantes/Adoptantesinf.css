@@ -18,16 +18,18 @@ nav{
 }
 
 nav a{
-    border: solid black 1px;
-    text-decoration: none;
-    display: block;
-    margin: 10px;
-    background-color: #bfb;
-    padding: 13px;
-    border-radius: 10px;
-    color: #000;
-    font-weight: bolder;
-    text-align: center;
+  border: solid black 1px;
+  text-decoration: none;
+  display: block;
+  margin: 10px;
+  background-color: #bfb;
+  padding: 8px;
+  border-radius: 10px;
+  color: #000;
+  font-weight: bolder;
+  text-align: center;  
+  line-height: 20px;
+  font-size: 14px;
 }
 
 .Presentacion{
