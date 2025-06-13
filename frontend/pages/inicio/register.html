@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Rescue Me</title>
+    <link rel="stylesheet" href="../../css/inicio/Registro.css">
+    <link rel="icon" type="image/png" href="image/favicon.png">
+</head>
+<body>
+    <nav class="Inicio">
+        <div class="Principal"><a href="../../Inicio.html">Rescue Me</a></div>
+        <a href="./login.html">Iniciar Sesión</a>
+        <a href="./register.html">Registrarse</a>
+    </nav>
+ <div class="visual">
+        <form class="form" id="registerForm">
+            <h1 class="title">Registro</h1>
+            <div class="inputcontainer">
+                <input type="email" class="input" placeholder="" id="correo" required>
+                <label for="" class="label">Correo</label>
+            </div>
+            <div class="inputcontainer">
+                <input type="text" class="input" placeholder="" id="nombre" required>
+                <label for="" class="label">Nombre usuario</label>
+            </div>
+            <div class="inputcontainer">
+                <input type="password" class="input" placeholder="" id="contraseña" required>
+                <label for="" class="label">Contraseña</label>
+            </div>
+                <select id="rol">
+                <option value="1">Adoptante</option>
+                <option value="2">Administrador</option>
+            </select>
+            <div class="submitBtn">
+            <button type="submit">Enviar</button>
+            </div>
+        </form>
+        <div class="RegistroR">
+            <h4>¿Desea registrar su refugio?</h4>
+            <a href="../inicio/RegistroR.html"><button class="Refugio">Registro Refugios</button></a>
+        </div>
+        </div>
+    </div>
+    <script src="../../js/register.js"></script>
+</body>
+</html>

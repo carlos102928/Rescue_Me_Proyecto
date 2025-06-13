@@ -1,0 +1,356 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #9e96;
+    background-image: url(../../images/fondo_huellas_perro.png);
+    background-repeat: repeat;
+    font-family: sans-serif;
+    justify-content: center;
+}
+nav{
+    border: solid black 1px;
+    display: grid;
+    grid-template-columns: 40% repeat(3, 20%);
+    padding: 10px 20px;
+    width: 70%;
+    background-color: #94ef94ff;
+    border-radius: 10px;
+    justify-self: center;
+}
+
+nav button{
+        border: solid black 1px;
+    text-decoration: none;
+    display: block;
+    margin: 10px;
+    background-color: #bfb;
+    padding: 8px;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bolder;
+    text-align: center;  
+    line-height: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+nav button:hover{
+    transition: 0.5s ease;
+    background-color: #ada;
+}
+
+.Contenedor{
+    border: solid black 1px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    width: 70%;
+    height: 300px;
+    justify-items: center;
+    background: linear-gradient(to right, #8d8,#9e9);
+    border-radius: 15px;
+    margin: 30px;
+    padding: 10px;
+    justify-self: center;
+}
+
+
+
+.Permisos p{
+    border: black solid 1px;
+    font-size: 12px;
+    text-align: left;
+    margin: 15px;
+    background-color: #dfd;
+    padding: 5px;
+    border-radius: 15px;
+    width: 150px;
+    text-align: center;
+}
+
+.Informacion{
+    text-align: center;
+    width: 90%;
+    border-radius: 15px;
+    background-color: #bfb;
+    padding: 5px;
+    border: black solid 1px;
+    margin: 10px;
+    justify-self: center;
+}
+
+.Informacion a{
+    text-decoration: none;
+}
+
+.Permisos{
+    border: solid black 1px;
+    padding: 10px;
+    background-color: #b1efb1;
+    margin: 5px 10px;
+    border-radius: 15px;
+    justify-items: center;
+    justify-self: center;
+    width: 65%;
+    height: 250px;
+}
+
+button{
+    padding: 5px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    margin: 5px 10px;
+    width: 125px;
+    border: black solid 1px;
+}
+
+button:hover{
+    transition: ease 0.5s;
+    background-color: #eee;
+}
+
+.Permisos h3{
+    margin: 20px;
+    padding: 10px;
+    background-color: #7c7;
+    text-align: center;
+    font-size: 14px;
+    border: black solid 1px;
+    border-radius: 15px;
+    width: 250px;
+}
+
+nav a{
+  border: solid black 1px;
+  text-decoration: none;
+  display: block;
+  margin: 10px;
+  background-color: #bfb;
+  padding: 8px;
+  border-radius: 10px;
+  color: #000;
+  font-weight: bolder;
+  text-align: center;  
+  line-height: 30px;
+  font-size: 14px;
+}
+
+.Principal a{
+    font-size: 25px;
+    font-family: "Lucida Handwriting", "Dancing Script", cursive;
+}
+
+nav a:hover{
+    transition: 0.5s ease;
+    background-color: #ada;
+}
+
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+.menu-button {
+    background-color: #7c7;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 15px 15px 0 0;
+}
+.menu-button:hover {
+    transition: 0.5s ease;
+    background-color: #9d9;
+}
+.menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    min-width: 150px;
+    margin-top: 5px;
+    padding: 5px 0;
+}
+.menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+.menu a:hover {
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 1200px) {
+    body{
+      width: 700px;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      justify-items: center;
+    }
+    nav {
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    nav a {
+      font-size: 18px;
+      margin: 8px 0;
+    }
+  
+    .Principal a {
+      font-size: 20px;
+    }
+  
+    .Contenedor {
+      display: flex;
+      flex-direction: column;
+      width: 450px;
+      padding: 15px;
+      margin: 20px auto;
+      height: auto;
+    }
+  
+    .Permisos {
+      height: auto;
+      width: 85%;
+      margin: 15px 0;
+      padding: 15px;
+    }
+  
+    .Permisos h3 {
+      font-size: 16px;
+    }
+  
+    .Permisos p {
+      font-size: 14px;
+      width: 90%;
+    }
+  
+    .Informacion {
+      width: 100%;
+      padding: 10px;
+      margin: 10px auto;
+    }
+  
+    button {
+      width: 90%;
+      font-size: 14px;
+    }
+  
+    .menu-container {
+      display: block;
+      text-align: center;
+    }
+  
+    .menu-button {
+      font-size: 14px;
+      padding: 8px 12px;
+      width: 150px;
+      margin: 10px auto;
+    }
+  
+    .menu {
+      position: static;
+      width: 150px;
+      margin: 10px auto;
+      box-shadow: none;
+    }
+  
+    .menu a {
+      font-size: 16px;
+      padding: 10px;
+    }
+
+    .Permisos p {
+      font-size: 14px;
+      width: 60%;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    nav {
+    display: flex;
+    flex-direction: column;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    nav a {
+      font-size: 18px;
+      margin: 8px 0;
+    }
+  
+    .Principal a {
+      font-size: 20px;
+    }
+  
+    .Contenedor {
+      width: 450px;
+      padding: 15px;
+      margin: 20px auto;
+    }
+  
+    .Permisos {
+      width: 80%;
+      margin: 25px 30px;
+      padding: 15px;
+    }
+
+    .Permisos h3 {
+      font-size: 16px;
+    }
+  
+    .Permisos p {
+      font-size: 14px;
+      width: 60%;
+    }
+  
+    .Informacion {
+      width: 100%;
+      padding: 10px;
+      margin: 10px auto;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+
+    .Permisos button{
+      width: 100px;
+    }
+  
+    .menu-container {
+      display: block;
+      text-align: center;
+    }
+  
+    .menu-button {
+      font-size: 14px;
+      padding: 8px 12px;
+      width: 150px;
+      margin: 10px auto;
+    }
+  
+    .menu {
+      position: static;
+      width: 150px;
+      margin: 10px auto;
+      box-shadow: none;
+    }
+  
+    .menu a {
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+  

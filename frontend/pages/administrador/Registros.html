@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registros aplicación</title>
+    <link rel="stylesheet" href="../../css/administrador/Registros.css">
+</head>
+<body>
+    <body>
+    <nav class="Inicio">
+            <div class="Principal"><a href="./InicioAdmin.html">Rescue Me</a></div>
+            <a href="./Adoptantesinf.html">Inf. adoptantes</a>
+            <a href="./GestorAdopcion.html">Gestionar adopción</a>
+            <button id="logoutBtn">Cerrar sesión</button>
+            <script>
+                document.getElementById('logoutBtn').addEventListener('click', () =>{
+                    window.location.replace('../../Inicio.html')
+                })
+            </script>
+        </nav>
+                <div class="menu-container">
+            <button class="menu-button" onclick="toggleMenu()">Menú</button>
+            <div class="menu" id="menu">
+                <a href="./InformacionR.html">Información Refugios</a>
+                <a href="./Permisos.html">Permisos</a>
+                <a href="./Registros.html">Registros</a>
+            </div>
+        </div>
+        <div class="Contenedor">
+        <div class="Presentacion">
+            <h6>Registros sistema</h6>
+            <div class="Informacion">
+            <div class="Detalles">
+                <p>2025-05-16 / Registro usuario / id 10 / Carlos / Escobar</p>
+                <p>2025-05-16 / Actualización información / id 10 / Correo / carlosmarioescobar119@gmail.com</p>
+                <p>2025-05-17 / Ingreso información / id refugio 2 / Animales / animales.xclx</p>
+                <p>2025-05-17 / Registro usuario / id 11 / Ana / Correa</p>
+                <p>2025-05-17 / Registro usuario / id 12 / Jesus / Molino</p>
+                <p>2025-05-17 / Actualización información / id 11 / teléfono / 3123894546</p>
+                <p>2025-05-18 / Ingreso información / id refugio 2 / Animales / animales.xclx</p>
+                <p>2025-05-18 / Registro usuario / id 13 / Marta / Nieto</p>
+                <p>2025-05-18 / Registro usuario / id 14 / Luciana / Alvarado</p>
+                <p>2025-05-18 / Actualización información / id 14 / Correo / lucianaalva@gmail.com</p>
+            </div>
+        </div>
+</div>
+</div>
+            <script src="../../js/InicioAdmin.js"></script>
+</body>
+</html>

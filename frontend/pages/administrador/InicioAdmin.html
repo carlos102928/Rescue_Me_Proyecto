@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Bienvenido Administrador!</title>
+    <link rel="stylesheet" href="../../css/administrador/InicioAdmin.css">
+</head>
+<body>
+    <body>
+        <nav class="Inicio">
+            <div class="Principal"><a href="./InicioAdmin.html">Rescue Me</a></div>
+            <a href="./Adoptantesinf.html">Inf. adoptantes</a>
+            <a href="./GestorAdopcion.html">Gestionar adopción</a>
+            <button id="logoutBtn">Cerrar sesión</button>
+            <script>
+                document.getElementById('logoutBtn').addEventListener('click', () =>{
+                    window.location.replace('../../Inicio.html')
+                })
+            </script>
+        </nav>
+                     <div class="menu-container">
+            <button class="menu-button" onclick="toggleMenu()">Menú</button>
+            <div class="menu" id="menu">
+                <a href="./InformacionR.html">Información Refugios</a>
+                <a href="./Permisos.html">Permisos</a>
+                <a href="./Registros.html">Registros</a>
+            </div>
+        </div>
+        <script src="InicioAdmin.js"></script>
+        <div class="Contenedor">
+        <div class="Presentacion">
+            <h6>Información Rescue Me</h6>
+            <p>¡Bienvenido a Rescue Me, nosotros nos encargamos de ayudarlo a hallar a su mascota ideal de manera simple y eficiente. ¡Aquí podrás hallar múltiples opciones de tu agrado para hallar a tu mascota ideal! <br> <br>
+            Nuestras intenciones es permitirle a los animales tener una segunda oportunidad de vida, haciéndolos llegar a ustedes, los usuarios. Estamos vinculados a varios refugios vistos en la ciudad, lo que permitirá que usted pueda hallar a su mascota ideal sin lugar a dudas. <br> <br>
+            Contamos con un sistema de donaciones, los fondos recaudados serán dirigidos a los refugios vinculados a la aplicación, esto para poder abarcar gastos que el mismo refugio tenga. ¡Agradecemos que haya escogido RescueMe y que le de un hogar al más necesitado!
+            </p>
+            <script src="../../js/InicioAdmin.js"></script>
+        </div>
+    </div>
+</body>
+</html>

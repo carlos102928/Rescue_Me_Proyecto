@@ -1,0 +1,250 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #9e96;
+    background-image: url(../../images/fondo_huellas_perro.png);
+    background-repeat: repeat;
+    font-family: sans-serif;
+    justify-content: center;
+    justify-items: center;
+}
+
+nav{
+  border: solid black 1px;
+  display: grid;
+  grid-template-columns: 33% repeat(4, 17%);
+  padding: 10px 20px;
+  width: 70%;
+  background-color: #94ef94ff;
+  border-radius: 10px;
+}
+
+nav button{
+        border: solid black 1px;
+    text-decoration: none;
+    display: block;
+    margin: 10px;
+    background-color: #bfb;
+    padding: 8px;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bolder;
+    text-align: center;  
+    line-height: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+nav button:hover{
+    transition: 0.5s ease;
+    background-color: #ada;
+}
+
+
+.Presentacion{
+  border: solid black 1px;
+  width: 80%;
+  background-color: #b1efb1;
+  padding: 30px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.Presentacion p{
+  margin: 5px;
+  font-size: 18px;
+}
+
+.Contenedor{
+  border: solid black 1px;
+  width: 70%;
+  justify-items: center;
+  background: linear-gradient(to right, #8d8,#9e9);
+  border-radius: 15px;
+  margin: 30px;
+  padding: 10px;
+}
+
+.Presentacion p{
+      background-color: #4b45;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 15px;
+}
+
+.Presentacion h6{
+  
+  background-color: #4b45;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 15px;
+  font-size: 22px;
+  justify-self: center;
+  border: black solid 1px;
+}
+
+.Informacion{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px;
+}
+
+.Detalles{
+  flex: 1;
+  background-color: #ddde;
+  border-radius: 15px;
+  border: black solid 1px;
+  padding: 10px;
+}
+
+.Detalles h4{
+  background-color: #eee;
+  padding: 7px;
+  border-radius: 4px;
+  margin: 10px 0;
+  border: black solid 1px;
+}
+
+.Detalles1{
+  flex: 2;
+  margin: 0px 10px;
+  background-color: #ddde;
+  padding: 10px;
+  border-radius: 15px;
+  border: black solid 1px;
+}
+
+.Detalles1 h4{
+  background-color: #eee;
+  padding: 7px;
+  border-radius: 4px;
+  margin: 10px 0;
+  border: black solid 1px;
+}
+
+
+nav a{
+  border: solid black 1px;
+  text-decoration: none;
+  display: block;
+  margin: 10px;
+  background-color: #bfb;
+  padding: 8px;
+  border-radius: 10px;
+  color: #000;
+  font-weight: bolder;
+  text-align: center;  
+  line-height: 30px;
+}
+
+
+.Principal a{
+  font-size: 25px;
+  font-family: "Lucida Handwriting", "Dancing Script", cursive;
+}
+
+nav a:hover{
+  transition: 0.5s ease;
+  background-color: #ada;
+}
+
+
+
+@media (max-width: 1200px) {
+  nav {
+    grid-template-columns: 50% 50%;
+    width: 95%;
+  }
+
+  nav a {
+    font-size: 18px;
+    margin: 5px;
+  }
+
+  .Contenedor, .Presentacion {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .Informacion {
+    flex-direction: column;
+  }
+
+  .Detalles, .Detalles1 {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  nav {
+    grid-template-columns: 100%;
+    width: 95%;
+  }
+
+  nav a {
+    font-size: 16px;
+    margin: 5px;
+  }
+
+  .Contenedor, .Presentacion {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .Informacion {
+    flex-direction: column;
+  }
+
+  .Detalles, .Detalles1 {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background: #ff6f91;
+    color: white;
+    font-size: 1.1rem;
+}
+
+td {
+    font-size: 1rem;
+    color: #444;
+}
+
+tr:hover {
+    background-color: #ffe3ed;
+}
+.a enlace-elegnate{
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #ff6f91;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+.a enlace-elegnate:hover {
+    background: #ff3e6c;
+    transform: scale(1.1);
+}

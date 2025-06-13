@@ -1,0 +1,137 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #9e96;
+    background-image: url(../../images/fondo_huellas_perro.png);
+    background-repeat: repeat;
+    font-family: sans-serif;
+    justify-content: center;
+    justify-items: center;
+}
+
+nav{
+    border: solid black 1px;
+    display: grid;
+    grid-template-columns: 50% repeat(2, 25%);
+    padding: 10px 20px;
+    width: 70%;
+    background-color: #94ef94ff;
+    border-radius: 10px;
+}
+
+.Contenedor{
+    border: solid black 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Presentacion{
+    border: solid black 1px;
+    width: 40%;
+    background-color: #dfd;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.Presentacion p{
+    flex: 3;
+    margin: 5px;
+    font-size: 18px;
+}
+
+.Contenedor img{
+    width: 35%;
+    height: 30%;
+    border-radius: 15px;
+    border: solid black 1px;
+    margin: 30px;
+}
+
+.Contenedor{
+    padding: 15px;
+    margin: 20px 0;
+    background: linear-gradient(to right, #8d8,#9e9);
+    width: 70%;
+    border-radius: 15px;
+}
+
+nav a{
+    border: solid black 1px;
+    text-decoration: none;
+    display: block;
+    margin: 10px;
+    background-color: #bfb;
+    padding: 8px;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bolder;
+    text-align: center;  
+    line-height: 30px;
+}
+
+
+.Principal a{
+    font-size: 25px;
+    font-family: "Lucida Handwriting", "Dancing Script", cursive;
+}
+
+nav a:hover{
+    transition: 0.5s ease;
+    background-color: #ada;
+}
+
+.Bienvenida{
+    text-align: center;
+}
+
+.Bienvenida p{
+    font-size: 14px;
+}
+
+
+/* para pantallas menores a 768*/
+
+@media (max-width: 768px) {
+
+  body{
+    width: 700px;
+  }
+    nav {
+      grid-template-columns: 100%;
+      width: 500px;
+      text-align: center;
+    }
+  
+    .Contenedor {
+      flex-direction: column;
+      width: 450px;
+    }
+  
+    .Contenedor img {
+      width: 60%;
+      height: auto;
+      margin: 15px auto;
+    }
+  
+    .Presentacion {
+      width: 80%;
+      align-self: center;
+    }
+  
+    .Presentacion p {
+      font-size: 16px;
+    }
+  
+    .Principal a {
+      font-size: 20px;
+    }
+  
+    .Bienvenida p {
+      font-size: 13px;
+    }
+  }

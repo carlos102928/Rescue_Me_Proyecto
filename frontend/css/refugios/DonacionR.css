@@ -1,0 +1,216 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #9e96;
+    background-image: url(../../images/fondo_huellas_perro.png);
+    background-repeat: repeat;
+    font-family: sans-serif;
+    justify-content: center;
+        justify-items: center;
+}
+
+nav{
+    border: solid black 1px;
+    display: grid;
+    grid-template-columns: 35% repeat(3, 22%);
+    padding: 10px 20px;
+    width: 70%;
+    background-color: #94ef94ff;
+    border-radius: 10px;
+}
+
+nav a{
+    border: solid black 1px;
+    text-decoration: none;
+    display: block;
+    margin: 10px;
+    background-color: #bfb;
+    padding: 8px;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bolder;
+    text-align: center;  
+    line-height: 30px;
+}
+
+
+.Principal a{
+    font-size: 25px;
+    font-family: "Lucida Handwriting", "Dancing Script", cursive;
+}
+
+nav a:hover{
+    transition: 0.5s ease;
+    background-color: #ada;
+}
+
+
+
+.Presentacion{
+    border: solid black 1px;
+    width: 80%;
+    background-color: #b1efb1;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.Presentacion p{
+    margin: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.Contenedor{
+    border: solid black 1px;
+    width: 70%;
+    justify-items: center;
+    background: linear-gradient(to right, #8d8,#9e9);
+    border-radius: 15px;
+    margin: 30px;
+    padding: 10px;
+}
+
+nav a:hover{
+    transition: 0.5s ease;
+    background-color: #ada;
+}
+
+.Presentacion h2{
+    margin: 7px;
+    justify-self: center;
+    border-radius: 15px;
+    background-color: #8d8;
+    padding: 10px;
+    border: black solid 1px;
+    font-size: 18px;
+}
+
+.Presentacion p{
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.Donaciones{
+    flex: 1;
+    width: 35%;
+    margin: 15px;
+    padding: 10px;
+    background-color: #94ef94ff;
+    justify-self: center;
+    border-radius: 15px;
+    border: black solid 1px;
+}
+
+.Donaciones h4{
+    width: 80%;
+    justify-self: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: #dfd;
+    border-radius: 15px;
+    border: black solid 1px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.Datos{
+    flex: 1;
+    width: 35%;
+    margin: 15px;
+    padding: 10px;
+    background-color: #94ef94ff;
+    text-align: center;
+    border-radius: 15px;
+    border: black solid 1px;
+    height: 15vh;
+}
+
+.Datos h4{
+    width: 80%;
+    background-color: #7c7;
+    border-radius: 15px;
+    border: black solid 1px;
+    font-size: 12px;
+    justify-self: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+.Datos p{
+    width: 70%;
+    background-color: #dfd;
+    border-radius: 15px;
+    border: black solid 1px;
+    justify-self: center;
+    font-size: 12px;
+    margin: 10px;
+    padding: 5px;
+    
+}
+
+.Flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Donaciones h3{
+    width: 80%;
+    background-color: #7c7;
+    border-radius: 15px;
+    border: black solid 1px;
+    font-size: 12px;
+    justify-self: center;
+    margin: 10px;
+    padding: 8px;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    body{
+        width: 700px;
+    }
+    nav {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    text-align: center;
+    }
+  
+    nav a {
+    font-size: 18px;
+    }
+  
+    .Principal a {
+    font-size: 20px;
+    }
+  
+    .Presentacion {
+    width: 400px;
+      padding: 15px;
+    }
+  
+    .Presentacion h4 {
+      width: 90%;
+      font-size: 16px;
+    }
+
+    .Donaciones h4{
+        font-size: 14px;
+        width: 75%;
+    }
+
+    .Donaciones h3{
+        font-size: 18px;
+    }
+
+    .Datos{
+        height: 110px;
+    }
+
+    .Datos p{
+        font-size: 14px;
+    }
+}

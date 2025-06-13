@@ -1,0 +1,194 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #9e96;
+    background-image: url(../../images/fondo_huellas_perro.png);
+    background-repeat: repeat;
+    font-family: sans-serif;
+    justify-content: center;
+    justify-items: center;
+}
+
+nav{
+    border: solid black 1px;
+    display: grid;
+    grid-template-columns: 33% repeat(4, 17%);
+    padding: 10px 20px;
+    width: 70%;
+    background-color: #94ef94ff;
+    border-radius: 10px;
+}
+
+nav button{
+        border: solid black 1px;
+    text-decoration: none;
+    display: block;
+    margin: 10px;
+    background-color: #bfb;
+    padding: 8px;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bolder;
+    text-align: center;  
+    line-height: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+nav button:hover{
+    transition: 0.5s ease;
+    background-color: #ada;
+}
+
+.Contenedor{
+    border: solid black 1px;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    justify-content: center;
+    width: 70%;
+    justify-items: center;
+    background: linear-gradient(to right, #8d8,#9e9);
+    border-radius: 15px;
+    margin: 30px;
+    padding: 10px;
+}
+
+.Animal {
+  border: solid #000 1px;
+  padding: 10px;
+  background-color: #b1efb1;
+  margin: 10px;
+  border-radius: 15px;
+  height: 350px;
+  width: 250px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Animal:hover {
+  background-color: #a1dfa1;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.Animal img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Opcional: texto centrado y estilizado */
+.Animal p {
+  margin: 5px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+.Informacion{
+    text-align: center;
+    width: 80%;
+    border-radius: 15px;
+    background-color: #bfb;
+    padding: 5px;
+    border: black solid 1px;
+    margin: 10px;
+}
+
+.foto{
+  width: 75%;
+  border-radius: 25px;
+}
+
+.foto img{
+  border-radius: 25%;
+  border: solid black 1px;
+}
+
+.Informacion a{
+    text-decoration: none;
+}
+
+.Animal img {
+  width: 75%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+    border: solid black 1px;
+}
+
+nav a{
+    border: solid black 1px;
+    text-decoration: none;
+    display: block;
+    margin: 10px;
+    background-color: #bfb;
+    padding: 8px;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bolder;
+    text-align: center;  
+    line-height: 30px;
+}
+
+
+.Principal a{
+    font-size: 25px;
+    font-family: "Lucida Handwriting", "Dancing Script", cursive;
+}
+
+nav a:hover{
+    transition: 0.5s ease;
+    background-color: #ada;
+}
+
+/* para pantallas menores entre 1200 a 768*/
+@media (max-width: 1200px) {
+  body{
+    width: 700px;
+  }
+    nav {
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+      text-align: center;
+    }
+  
+    nav a {
+      font-size: 18px;
+      margin: 5px;
+    }
+  
+    .Principal a {
+      font-size: 20px;
+    }
+  
+    .Contenedor {
+      grid-template-columns: 50% 50%;
+      width: 450px;
+      margin: 20px auto;
+      padding: 10px;
+    }
+  
+    .Animal {
+      width: 75%;
+      margin: 10px auto;
+      height: auto;
+    }
+  
+    .Animal img {
+      height: auto;
+      max-height: 200px;
+    }
+  
+    .Informacion {
+      width: 90%;
+      font-size: 14px;
+    }
+  }

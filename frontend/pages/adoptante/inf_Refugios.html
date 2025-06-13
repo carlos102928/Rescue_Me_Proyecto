@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refugios vinculados</title>
+    <link rel="stylesheet" href="../../css/adoptante/inf_Refugios.css">
+</head>
+<body>
+    <body>
+        <nav class="Inicio">
+            <div class="Principal"><a href="../adoptante/InicioA.html">Rescue Me</a></div>
+            <a href="../adoptante/Adopcion.html">¡Adopta!</a>
+            <a href="../adoptante/Donacion.html">Donaciones</a>
+            <a href="../adoptante/inf_Refugios.html">Refugios</a>
+            <button id="logoutBtn">Cerrar sesión</button>
+            <script>
+                document.getElementById('logoutBtn').addEventListener('click', () =>{
+                    window.location.replace('../../Inicio.html')
+                })
+            </script>
+        </nav>
+        <div class="Contenedor">
+        <div class="Presentacion">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre Refugio</th>
+                        <th>Dirección</th>
+                        <th>Correo</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaRefugios"></tbody>
+            </table>
+            <script src="../../js/refugiosMain.js"></script>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

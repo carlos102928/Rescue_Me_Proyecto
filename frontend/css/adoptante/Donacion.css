@@ -1,0 +1,294 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #9e96;
+    background-image: url(../../images/fondo_huellas_perro.png);
+    background-repeat: repeat;
+    font-family: sans-serif;
+    justify-content: center;
+    justify-items: center;
+}
+
+nav{
+  border: solid black 1px;
+  display: grid;
+  grid-template-columns: 33% repeat(4, 17%);
+  padding: 10px 20px;
+  width: 70%;
+  background-color: #94ef94ff;
+  border-radius: 10px;
+}
+
+nav button{
+        border: solid black 1px;
+    text-decoration: none;
+    display: block;
+    margin: 10px;
+    background-color: #bfb;
+    padding: 8px;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bolder;
+    text-align: center;  
+    line-height: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+nav button:hover{
+    transition: 0.5s ease;
+    background-color: #ada;
+}
+
+.Contenedor{
+  border: solid black 1px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70%;
+  justify-items: center;
+  background: linear-gradient(to right, #8d8,#9e9);
+  border-radius: 15px;
+  margin: 30px;
+  padding: 10px;
+  height: 75vh;
+}
+
+.Donacion{
+  border: solid black 1px;
+  padding: 10px;
+  flex: 2;
+  background-color: #b1efb1;
+  width: 20px;
+  margin: 5px 10px;
+  border-radius: 15px;
+  height: 70vh;
+  justify-items: center;
+}
+
+.Donacion p{
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.Donacion h4{
+  background-color: #7c7;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 5px;
+  border: black solid 1px;
+}
+
+.Informacion{
+  text-align: center;
+  width: 50%;
+  border-radius: 15px;
+  background-color: #bfb;
+  padding: 5px;
+  border: black solid 1px;
+  margin: 10px;
+}
+
+.Informacion a{
+  text-decoration: none;
+}
+
+.Transaccion{
+  border: solid black 1px;
+  padding: 10px;
+  flex: 2;
+  /*height: 25vh;*/
+  background-color: #b1efb1;
+  width: 20px;
+  margin: 5px 10px;
+  border-radius: 15px;
+  height: 70vh; 
+  justify-items: center;
+}
+
+button{
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  background-color: #efe;
+  margin: 5px 10px;
+}
+
+input{
+  width: 250px;
+  padding: 10px;
+  border-radius: 15px;
+  border: solid black 1px;
+}
+
+button:hover{
+  transition: ease 0.5s;
+  background-color: #cdc;
+}
+
+.MetodoP{
+  background-color: #4b45;
+  margin: 5px;
+  border-radius: 15px;
+  text-align: center;
+  border: black solid 1px;
+  width: 65%;
+}
+
+.MetodoP h4{
+  margin: 15px;
+  background-color: #7c7;
+  padding: 10px;
+  border-radius: 15px;
+  border: black solid 1px;
+}
+
+nav a{
+  border: solid black 1px;
+  text-decoration: none;
+  display: block;
+  margin: 10px;
+  background-color: #bfb;
+  padding: 8px;
+  border-radius: 10px;
+  color: #000;
+  font-weight: bolder;
+  text-align: center;  
+  line-height: 30px;
+}
+
+
+.Principal a{
+  font-size: 25px;
+  font-family: "Lucida Handwriting", "Dancing Script", cursive;
+}
+
+nav a:hover{
+  transition: 0.5s ease;
+  background-color: #ada;
+}
+
+/*lista desplegable*/
+.MetodoP>form{
+  border-radius: 10px;
+  margin-top: 10px;
+  width: 70%;
+  padding: 7px;
+  font-weight: bold;
+}
+.grid{
+display: grid;
+width: 95%;
+justify-items: center;
+}
+.grid>select{
+  border-radius: 10px;
+  text-decoration: double;
+  color:black;
+  opacity: 0.5s;
+  font-size: 15px;
+  padding: 3px;
+  text-align: center;
+  margin-top:  2px;
+  width: 150px;
+  justify-self: center;
+}
+.grid>label{
+  margin: 10px;
+
+}
+.grid>button{
+margin-top: 20px;
+width: 200px;
+justify-self: center;
+}
+
+.grid input{
+  width: 85%;
+}
+.MetodoP form{
+  width: 95%;
+  justify-items: center;
+}
+#Texto{
+  display: none;
+  background-color: #eee;
+  padding: 5px;
+  margin-top: 15px;
+  border-radius: 15px;
+  width: 75%;
+  font-size: 12px;
+}
+
+.Imagen img{
+  border-radius: 15px;
+  border: solid black 3px;
+  width: 75%;
+  height: 200px;
+}
+
+.Imagen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  body{
+    width: 700px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    text-align: center;
+  }
+
+  nav a {
+    font-size: 18px;
+    margin: 5px;
+  }
+
+  .Principal a {
+    font-size: 20px;
+  }
+
+  .Contenedor {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    width: 500px;
+    padding: 10px;
+    height: auto;
+  }
+
+  .Donacion, .Transaccion {
+    width: 90%;
+    height: auto;
+    margin: 15px auto;
+  }
+
+  .Informacion {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  input {
+    width: 90%;
+  }
+.MetodoP{
+  width: 300px;
+  height: 450px;
+  justify-items: center;
+}
+  .MetodoP form {
+    width: 90%;
+  }
+
+}
+
+
+/* para pantallas menores a 768*/

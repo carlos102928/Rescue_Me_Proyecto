@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionar adopción</title>
+    <link rel="stylesheet" href="../../css/administrador/GestorAdopcion.css">
+</head>
+<body>
+    <body>
+        <nav class="Inicio">
+            <div class="Principal"><a href="./InicioAdmin.html">Rescue Me</a></div>
+            <a href="./Adoptantesinf.html">Inf. adoptantes</a>
+            <a href="./GestorAdopcion.html">Gestionar adopción</a>
+            <button id="logoutBtn">Cerrar sesión</button>
+            <script>
+                document.getElementById('logoutBtn').addEventListener('click', () =>{
+                    window.location.replace('../../Inicio.html')
+                })
+            </script>
+        </nav>
+        <div class="menu-container">
+            <button class="menu-button" onclick="toggleMenu()">Menú</button>
+            <div class="menu" id="menu">
+                <a href="./InformacionR.html">Información Refugios</a>
+                <a href="./Permisos.html">Permisos</a>
+                <a href="./Registros.html">Registros</a>
+            </div>
+        </div>
+        <div class="Contenedor">
+        <div class="Presentacion">
+            <h6>Gestión procesos adopción</h6>
+            <div class="Informacion">
+            <div class="Detalles">
+                <form action="">
+                <p>2025-05-16 / Inicio proceso adopción / Adoptante id 10 / Carlos / Escobar / Animal id 15 /
+                    <br>
+                    <label for="opciones">Seleccionar estado adopción</label>
+                    <select class="Opciones" id = "Opciones" required>
+                    <option value="">Seleccionar estado</option>
+                    <option value="opcion1">Aceptado</option>
+                    <option value="opcion2">Degenado</option>
+                    </select>
+                </p>
+                <p>2025-05-16 / Inicio proceso adopción / Adoptante id 10 / Jose / Flores / Animal id 10 /
+                    <br>
+                    <label for="opciones">Seleccionar estado adopción</label>
+                    <select class="Opciones" id = "Opciones" required>
+                    <option value="">Seleccionar estado</option>
+                    <option value="opcion1">Aceptado</option>
+                    <option value="opcion2">Degenado</option>
+                    </select>
+                </p>
+                <p>2025-05-17 / Inicio proceso adopción / Adoptante id 1 / Felipe / Gaitan / Animal id 5 /
+                    <br>
+                    <label for="opciones">Seleccionar estado adopción</label>
+                    <select class="Opciones" id = "Opciones" required>
+                    <option value="">Seleccionar estado</option>
+                    <option value="opcion1">Aceptado</option>
+                    <option value="opcion2">Degenado</option>
+                    </select>
+                </p>
+                <p>2025-05-17 /Inicio proceso adopción / Usuario id 11 / Ana / Correa / Animal id 7 /
+                    <br>
+                    <label for="opciones">Seleccionar estado adopción</label>
+                    <select class="Opciones" id = "Opciones" required>
+                    <option value="">Seleccionar estado</option>
+                    <option value="opcion1">Aceptado</option>
+                    <option value="opcion2">Degenado</option>
+                    </select>
+                </p>
+                <p>2025-05-17 / Inicio proceso adopción/ Usuario id 12 / Jesus / Molino / Animal id 3 /
+                    <br>
+                    <label for="opciones">Seleccionar estado adopción</label>
+                    <select class="Opciones" id = "Opciones" required>
+                    <option value="">Seleccionar estado</option>
+                    <option value="opcion1">Aceptado</option>
+                    <option value="opcion2">Degenado</option>
+                    </select>
+                </p>
+                <p>2025-05-17 / Inicio proceso adopción / Usuario id 3 / Carlos / Molina / Animal id 9 /
+                    <br>
+                    <label for="opciones">Seleccionar estado adopción</label>
+                    <select class="Opciones" id = "Opciones" required>
+                    <option value="">Seleccionar estado</option>
+                    <option value="opcion1">Aceptado</option>
+                    <option value="opcion2">Degenado</option>
+                    </select>
+                </p>
+                <p>2025-05-18 / Ingreso información / Usuario id 4 / Michael / Borbosa / Animal id 19 /
+                    <br>
+                    <label for="opciones">Seleccionar estado adopción</label>
+                    <select class="Opciones" id = "Opciones" required>
+                    <option value="">Seleccionar estado</option>
+                    <option value="opcion1">Aceptado</option>
+                    <option value="opcion2">Degenado</option>
+                    </select>
+                </p>
+                <button type="submit" onclick="mostrarTexto()">Enviar</button>
+                <p id="Texto">Se han acutalizado los estados</p>
+            </form>
+        </div>
+</div>
+</div>
+<script src="../../js/InicioAdmin.js"></script>
+<script>
+    function mostrarTexto() {
+    let texto = document.getElementById("Texto");
+    let Opciones = document.getElementById("Opciones").value
+    if (Opciones != ""){
+        texto.style.display = "block";
+    }
+    else{
+        texto.style.display = "none"
+    }
+    }
+</script>
+</body>
+</html>

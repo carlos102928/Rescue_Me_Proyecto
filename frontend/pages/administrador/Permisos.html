@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permisos Usuarios</title>
+    <link rel="stylesheet" href="../../css/administrador/Permisos.css">
+</head>
+<body>
+<nav class="Inicio">
+            <div class="Principal"><a href="./InicioAdmin.html">Rescue Me</a></div>
+            <a href="./Adoptantesinf.html">Inf. adoptantes</a>
+            <a href="./GestorAdopcion.html">Gestionar adopción</a>
+            <button id="logoutBtn">Cerrar sesión</button>
+            <script>
+                document.getElementById('logoutBtn').addEventListener('click', () =>{
+                    window.location.replace('../../Inicio.html')
+                })
+            </script>
+        </nav>
+                <div class="menu-container">
+            <button class="menu-button" onclick="toggleMenu()">Menú</button>
+            <div class="menu" id="menu">
+                <a href="./InformacionR.html">Información Refugios</a>
+                <a href="./Permisos.html">Permisos</a>
+                <a href="./Registros.html">Registros</a>
+            </div>
+        </div>
+    <div class="Contenedor">
+        <div class="Permisos">
+            <h3>Permisos de acceso Usuario</h3>
+            <p>Adopción</p>
+            <p>Donación</p>
+            <a href="ModificarP.html"><button>Modificar</button></a>
+    </div>
+    <div class="Permisos">
+            <h3>Permisos de acceso Refugio</h3>
+            <p>Datos Refugio</p>
+            <p>Ingreso animales</p>
+            <p>Donaciones</p>
+            <a href="ModificarP.html"><button>Modificar</button></a>
+    </div>
+</div>
+            <script src="../../js/InicioAdmin.js"></script>
+</body>
+</html>
